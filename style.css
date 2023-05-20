@@ -1,0 +1,140 @@
+html, body {
+    background-color: cornflowerblue;
+    font-family: Poppins;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-wrapper #profile {
+    position: relative;
+
+    background-image: url("assets/profile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 999px;
+}
+
+.profile-wrapper #profile > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 213px;
+    height: 213px;
+
+    border-radius: 999px;    
+    border: 2px solid white;
+}
+
+.profile-wrapper > p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+}
+
+.links-wrapper {
+    margin: 24px 0;
+}
+
+.links-title {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.links-wrapper .link {
+    display: block;
+    width: 326px;
+    text-decoration: none;
+    color: white;
+
+    border: 2px solid white;
+    border-radius: 5px;
+
+    margin: 16px 0;
+    padding: 16px 0;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.links-wrapper .link:hover {
+    background-color: white;
+}
+
+.links-wrapper .link:hover > p, .links-wrapper .link:hover > span {
+    color: cornflowerblue;
+}
+
+.links-wrapper .link > p {
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.links-wrapper .link > span {
+    display: block;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.social-wrapper {
+    display: flex;
+}
+
+.social-wrapper .social-link {
+    position: relative;
+
+    width: 32px;
+    height: 32px;
+
+    font-size: 32px;
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+}
+
+.social-wrapper .social-link > i.ph {
+    position: absolute;
+}
+
+.social-wrapper .social-link > i.ph-fill {
+    position: absolute;
+    opacity: 0;
+}
+
+.social-wrapper .social-link:hover > i.ph {
+    opacity: 0;
+}
+
+.social-wrapper .social-link:hover > i.ph-fill {
+    opacity: 100;
+}
